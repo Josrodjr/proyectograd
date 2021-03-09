@@ -30,7 +30,7 @@ try:
     badges = steam_user.badges
 
     # insert the data into the dataframe
-    dataframe_steam = dataframe_steam.append(pd.Series([name, real_name, country_code, level, xp, bans, friends, games, recently_played_games, owned_games, badges]), ignore_index=True)
+    dataframe_steam = dataframe_steam.append(pd.Series([name, real_name, country_code, level, xp, bans, friends, games, recently_played_games, owned_games, badges], index = column_names), ignore_index=True)
     # print(name, real_name, country_code, level, xp, bans, friends, games, recently_played_games, owned_games, badges)    
     
 except Exception as error:
